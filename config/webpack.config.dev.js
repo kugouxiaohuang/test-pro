@@ -4,6 +4,7 @@ const pxtorem = require('postcss-pxtorem')
 const postcss = require('postcss')
 /*获取项目root path*/
 const root_path = path.resolve(__dirname, '../')
+console.log(root_path)
 
 const port = process.env.PORT || 3000
 const rootName = process.env.ROOTNAME || ''
@@ -53,5 +54,6 @@ const config = {
         new webpack.NoErrorsPlugin(),
     ]
 }
+console.log(config.output.path)
 
 module.exports = config

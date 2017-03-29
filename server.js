@@ -50,7 +50,7 @@ app.listen(port,function (err) {
     console.log(err)
     return
   }
-  console.log('Startup environment'+env)
+  console.log('Startup environment '+env)
   console.log('Listening at http://localhost:'+port)
 })
 

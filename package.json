@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "export NODE_ENV=lo&& export PORT=3003&& export DEBUG=true && node server.js  && npm run lint:watch"
+    "start": "export NODE_ENV=lo&& export PORT=3003&& export DEBUG=true && node server.js  && npm run lint:watch",
+    "lint": "esw webpack.config.* app",
+    "lint:watch": "npm run lint -- --watch"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
