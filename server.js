@@ -18,7 +18,7 @@ const proxyConfig = require('./config/proxy.config')
 proxyConfig.createProxys(app,env,rootName)
 
 if(env === 'lo'){
-  let config = require('.config/webpack.config.dev')
+  let config = require('./config/webpack.config.dev')
   let compiler = webpack(config)
   app.use(require('webpack-dev-middleware')(compiler,{
     noInfo:true,
