@@ -17,7 +17,7 @@ const config = {
         root_path+'/client/index.jsx'       // 定义入口文件
     ],
     output: {                                       // 定义出口目录
-        path: root_path+'build',
+        path: root_path+'/build',
         filename: 'bundle.js',
         publicPath: rootName+'/build/'
     },
